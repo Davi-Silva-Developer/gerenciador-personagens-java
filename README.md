@@ -18,8 +18,7 @@ Este projeto foi construído sem o uso de frameworks externos, focando puramente
 ##  Como Executar o Projeto
 
 1. Clona este repositório para a tua máquina local:
-   ```bash
- git clone https://github.com/Davi-Silva-Developer/gerenciador-personagens-java.git
+   ```bash git clone https://github.com/Davi-Silva-Developer/gerenciador-personagens-java.git
 Abre o projeto na tua IDE de preferência (IntelliJ IDEA, Eclipse, VS Code).
 
 Localiza e executa a classe SistemaPrincipal dentro do pacote br.com.gerenciador.main.
@@ -29,7 +28,7 @@ Segue as instruções no ecrã da consola para interagir com o sistema de filtra
  Próximos Passos (Evolução)
 Este projeto serve como uma base sólida para futuras implementações:
 
-[ ] Adicionar tratamento de exceções (Exceptions) com blocos try/catch para interações inválidas do utilizador.
+[X] Adicionar tratamento de exceções (Exceptions) com blocos try/catch para interações inválidas do utilizador.
 
 [ ] Migrar a persistência em memória (Listas) para um Banco de Dados relacional.
 
