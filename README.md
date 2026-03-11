@@ -1,39 +1,65 @@
-```markdown
 # Gerenciador de Personagens (Java Core)
 
 Um mini projeto prático desenvolvido em Java para aplicar e consolidar conceitos avançados da linguagem, estruturas de dados e boas práticas de engenharia de software.
 
-## O Objetivo do Projeto
-O objetivo foi construir um sistema backend executado via terminal (consola) para gerir uma coleção de personagens (inspirado no universo de jogos como Resident Evil). O foco principal do desenvolvimento esteve na criação de um código limpo, modular e de fácil manutenção, implementando a **Arquitetura em Camadas (Layered Architecture)** e o **Padrão Repositório (Repository Pattern)**.
+O objetivo foi construir um sistema backend executado via terminal (console) para gerir uma coleção de personagens (inspirado no universo de jogos como Resident Evil). O foco principal do desenvolvimento esteve na criação de um código limpo, modular e de fácil manutenção.
 
-## Tecnologias e Conceitos Aplicados
-Este projeto foi construído sem o uso de frameworks externos, focando puramente no poder do Java Core:
+## Tecnologias
+- Java 24
+- Java Core (Sem frameworks externos)
+- Stream API & Lambdas
+- Java Records
+- Generics (`<T>`)
+- Maven
 
-* **Java Records:** Utilização de `records` para a modelagem de dados imutáveis de forma enxuta e direta (modelo `Personagem`).
-* **Generics (`<T>`):** Criação de uma classe de repositório inteligente (`BauGenerico<T>`), capaz de armazenar e reutilizar a lógica de persistência para qualquer tipo de objeto.
-* **Stream API & Lambdas:** Criação de esteiras de processamento fluentes para filtragem e manipulação de dados em memória.
-* **Ordenação e Comparação:** Uso de `Comparator.comparingInt().reversed()` integrado à Stream API para gerar listagens ordenadas por pontuação (High Tiers).
-* **Estruturas de Dados:** Manipulação de coleções utilizando a interface `List`.
-* **Separação de Responsabilidades:** Divisão lógica do código nos pacotes `model`, `repository`, `service` e `main`.
+## Funcionalidades
+- Listagem e busca de personagens por Categoria.
+- Listagem e busca de personagens por Pontuação Mínima.
+- Ordenação automática de personagens (da maior para a menor pontuação).
+- Validação de entrada de dados do usuário.
 
-## Como Executar o Projeto
+## Como executar o projeto
 
-1. Clona este repositório para a tua máquina local:
+### Pré-requisitos
+- Java 24 ou superior
+- Uma IDE de sua preferência (IntelliJ IDEA, Eclipse, VS Code)
+
+### Passos
 ```bash
 git clone [https://github.com/Davi-Silva-Developer/gerenciador-personagens-java.git](https://github.com/Davi-Silva-Developer/gerenciador-personagens-java.git)
-Abre o projeto na tua IDE de preferência (IntelliJ IDEA, Eclipse, VS Code).
+Abra o projeto na sua IDE.
 
-Localiza e executa a classe Main dentro do pacote br.com.gerenciador.
+Localize e execute a classe Main dentro do pacote br.com.gerenciador.
 
-Segue as instruções no ecrã da consola para interagir com o sistema de filtragem de personagens!
+Interaja com o sistema diretamente pelo terminal da sua IDE.
+
+Menu Principal do Sistema
+Ao rodar a aplicação, você terá acesso ao seguinte menu interativo no console:
+
+Plaintext
+--- MENU DA BIBLIOTECA ---
+1 - Buscar por Categoria
+2 - Buscar por Pontuação Minima
+0 - Sair
+Conceitos aplicados
+Arquitetura em Camadas (Layered Architecture com pacotes model, repository, service e main).
+
+Padrão Repositório (Repository Pattern).
+
+Criação de uma classe de repositório inteligente e genérica (BauGenerico<T>).
+
+Princípios de Clean Code e Separação de Responsabilidades.
+
+Tratamento de Exceções (try/catch para entradas inválidas InputMismatchException).
 
 Próximos Passos (Evolução)
-Este projeto serve como uma base sólida para futuras implementações:
+[x] Adicionar tratamento de exceções (Exceptions) para interações inválidas do usuário.
 
-[x] Adicionar tratamento de exceções (Exceptions) com blocos try/catch para interações inválidas do utilizador.
-
-[ ] Migrar a persistência em memória (Listas) para uma Base de Dados relacional.
+[ ] Migrar a persistência em memória (Listas) para um Banco de Dados relacional.
 
 [ ] Evoluir a arquitetura de terminal para uma API REST utilizando o framework Spring Boot.
 
-Desenvolvido com dedicação por Davi Silva.
+Autor
+Davi Silva LinkedIn: https://www.linkedin.com/in/davi-silva-dev
+
+GitHub: https://github.com/Davi-Silva-Developer
